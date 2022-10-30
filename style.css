@@ -13,8 +13,8 @@
 }
 
 :root {
-  --clr-primary: hsl(215, 51%, 70%);
-  --clr-text: hsl(178, 100%, 50%);
+  --clr-text: hsl(215, 51%, 70%);
+  --clr-accent: hsl(178, 100%, 50%);
   --clr-mainBG: hsl(217, 54%, 11%);
   --clr-cardBG: hsl(216, 50%, 16%);
   --clr-line: hsl(215, 32%, 27%);
@@ -22,10 +22,134 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: var(--clr-mainBG);
+  color: var(--clr-text);
+
   font-family: "Outfit", sans-serif;
   font-size: 18px;
+  font-weight: 300;
 }
 
+.card {
+  width: 320px;
+
+  background-color: var(--clr-cardBG);
+  border-radius: 1rem;
+  padding: 1.25em;
+}
+
+.equilibrium_img {
+  height: calc(320px - 2.5em);
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 1.25em;
+}
+
+.equilibrium_img::after {
+  content: "";
+  display: block;
+  width: calc(320px - 2.5em);
+  height: calc(320px - 2.5em);
+  z-index: 10;
+  border-radius: 1em;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.equilibrium_img:hover::after {
+  background-color: var(--clr-accent);
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+h1 a {
+  color: var(--clr-white);
+}
+
+.text {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover,
+a span:hover {
+  color: var(--clr-accent);
+}
+
+.days_container,
+.creator_container,
+.ETH,
+.days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.days_container {
+  margin-bottom: 0.75em;
+}
+
+.ETH {
+  align-items: flex-start;
+  color: var(--clr-accent);
+  font-weight: 600;
+}
+
+.ETH .svg {
+  height: 1.5em;
+}
+
+.creator_container {
+  justify-content: flex-start;
+  margin-top: 1em;
+}
+
+.avatar {
+  width: 1.8em;
+  height: 1.8em;
+  border: 1px var(--clr-white) solid;
+  border-radius: 90%;
+  margin-right: 15px;
+}
+
+hr {
+  border: 1px solid var(--clr-line);
+}
+
+.name {
+  color: var(--clr-white);
+}
+
+footer {
+  position: absolute;
+  bottom: 8px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
