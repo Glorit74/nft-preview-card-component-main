@@ -48,11 +48,10 @@ body {
   height: calc(320px - 2.5em);
   overflow: hidden;
   border-radius: 0.75rem;
-  background-image: url(/images/image-equilibrium.jpg);
+  background-image: url(images/image-equilibrium.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
   margin-bottom: 1.25em;
 }
 
@@ -62,7 +61,7 @@ body {
   width: calc(320px - 2.5em);
   height: calc(320px - 2.5em);
   z-index: 10;
-  border-radius: 1em;
+  border-radius: 0.75em;
   opacity: 0.2;
   cursor: pointer;
 }
