@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+
+  background: transparent;
+
+  font-family: inherit;
+
+  text-decoration: none;
+}
+
+:root {
+  --clr-primary: hsl(215, 51%, 70%);
+  --clr-text: hsl(178, 100%, 50%);
+  --clr-mainBG: hsl(217, 54%, 11%);
+  --clr-cardBG: hsl(216, 50%, 16%);
+  --clr-line: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
