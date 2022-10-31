@@ -75,10 +75,12 @@ body {
 h1 {
   font-size: 1.2em;
   margin-bottom: 0.5em;
+  color: var(--clr-white);
 }
 
-h1 a {
-  color: var(--clr-white);
+h1:hover {
+  cursor: pointer;
+  color: var(--clr-accent);
 }
 
 .text {
@@ -91,15 +93,6 @@ h1 a {
   width: 1em;
   height: 1em;
   margin-right: 5px;
-}
-
-a {
-  cursor: pointer;
-}
-
-a:hover,
-a span:hover {
-  color: var(--clr-accent);
 }
 
 .days_container,
@@ -145,6 +138,11 @@ hr {
 
 .name {
   color: var(--clr-white);
+}
+
+.name:hover {
+  cursor: pointer;
+  color: var(--clr-accent);
 }
 
 footer {
